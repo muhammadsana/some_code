@@ -1,0 +1,102 @@
+SANA@LAPTOP-JHR6P0KI MINGW64 ~ (master)
+$ rm -rf .git(deletes initialisation of git)
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~
+$ cd desktop
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop
+$ mkdir folder
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop
+$ cd folder
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder
+$ git clone https://github.com/muhammadsana/laugh.git
+Cloning into 'laugh'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder
+$ git remote add origin https://github.com/msit-solutions/laugh.git
+fatal: not a git repository (or any of the parent directories): .git
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder
+$ git init
+Initialized empty Git repository in C:/Users/SANA/Desktop/folder/.git/
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ git remote add origin https://github.com/msit-solutions/laugh.git
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ ls
+laugh/
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ touch fo1
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ git add fo1
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   fo1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        laugh/
+
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ git add laugh
+(cd laugh 
+git add.)
+warning: adding embedded git repository: laugh
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> laugh
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached laugh
+hint:
+hint: See "git help submodule" for more information.
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ git commit -m "first commit"
+[master (root-commit) dc7854b] first commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 fo1
+ create mode 160000 laugh
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 230 bytes | 115.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/msit-solutions/laugh.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+SANA@LAPTOP-JHR6P0KI MINGW64 ~/desktop/folder (master)
+$

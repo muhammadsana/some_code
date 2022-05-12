@@ -1,0 +1,33 @@
+ Clone a Project﻿ The Clone project action lets you create a project that is similar
+ but not identical to an existing project.
+ This operation lets you create new projects without having to configure
+ them from scratch. Once you create the new project,
+ you can modify its settings independently from
+ the original project.
+
+The git log graph command creates a graphic overview of how a 
+various development pipelines have branched and merged over time.
+
+Forking a repository allows you to freely experiment with changes without 
+affecting the original project. Most commonly, forks are used to either propose
+changes to someone else's project or to use someone else's project as a starting
+point for your own idea.
+
+What are some common reasons to fork a git project?
+To fix an issue outside of the main project with the intent to have it merged 
+into the original project later.
+To use a fork as a basis for a new project.
+
+pull requests are designed to be initiated by the GIT CLIENT and completed
+by the REPOSITORY ADMINISTRATOR.
+
+git remote -v will show you the remote repository that you are tracking, along with its URL(s).
+
+git pull will download changes from a remote repository and attempt to merge them into the local repository.
+
+What is the difference between GitLab and GitHub?
+The major difference between GitHub and GitLab is the platform each philosophy presents.
+GitHub has higher availability and is more focused on infrastructure performance, 
+while GitLab is more focused on offering a features-based system with a centralized,
+integrated platform for web developers.
+
